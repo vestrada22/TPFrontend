@@ -1,0 +1,11 @@
+
+<section class="login">
+  <section class="login__container">
+    <h2>Sign In</h2>
+    <form class="login__container--form" autocomplete="off" [formGroup]="form" (ngSubmit)="login()">
+      <input class="input" type="text" placeholder="Email" formControlName="email">
+      <input class="input" type="password" placeholder="Password" formControlName="password">
+      <button type="submit" class="button" [disabled]="form.invalid">Sign in</button>
+    </form>
+  </section>
+</section>
